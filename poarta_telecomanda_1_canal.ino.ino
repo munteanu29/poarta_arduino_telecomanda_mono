@@ -63,7 +63,8 @@ void loop(){
   int evenimentButon=valCD!=valVecheTelecomanda;
   valVecheTelecomanda=valCD;
 
-  if(evenimentButon==HIGH){ 
+  if((evenimentButon==true && valCD==HIGH){
+//  if(evenimentButon==HIGH){ cu linia asta nu a mai mers
     if(starePoarta==0){
       stareVechePoarta=1;
       starePoarta=2;
